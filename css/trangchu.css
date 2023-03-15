@@ -9,6 +9,9 @@
     background-image: linear-gradient(rgba(255, 255, 255, 0.742),rgba(0,0,0,0.7)),url(/img/background_custom.jpg);
     background-position: center;
     background-size: cover;
+    /* margin-left: 8%;
+    padding-right: 8%;
+    box-sizing: border-box; */
 } 
 .sticky{
     position: fixed;
@@ -54,4 +57,48 @@ nav ul li a{
 }
 .cot{
     flex-basis: 50%;
+}
+h1{
+    color:#fff;
+    font-size: 100px;
+}
+p{
+    color: #fff;
+    font-size: 11px;
+    line-height: 15px
+}
+button{
+    width: 180px;
+    color: #000;
+    font-size: 12px;
+    padding: 12px 0px;
+    background-color: #fff;
+    border: 0;
+    border-radius: 20px;
+    outline: none;
+    margin-top: 20px;
+}
+.thedemo{
+    width: 200px;
+    height: 230px;
+    display: inline-block;
+    border-radius: 10px;
+    padding: 15px 25px;
+    box-sizing: border-box;
+    cursor: pointer;
+    margin: 10px 15px;
+    background-position: center;
+    background-size: cover;
+}
+.thedemo1{
+    background-image: url(/img/anhbanphim.jpg);
+}
+.thedemo2{
+    background-image: url(/img/anhphimco.jpg);
+}
+.thedemo3{
+    background-image: url(/img/anhcuttom.jpg);
+}
+.thedemo4{
+    background-image: url(/img/anhbanphim.jpg);
 }
