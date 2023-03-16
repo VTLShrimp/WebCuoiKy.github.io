@@ -1,51 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/trangchu.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Bàn phím tối cổ</title>
 </head>
-<body>
-    <div class="header">
-        <div class="bar">
-            <img src="/img/cropped-Ban-sao-cua-DONG-TOI-CO-1.png" class="logo">
-            <nav>
-                <ul>
-                    <li><a href="">Trang Chủ</a></li>
-                    <li><a href="">cái gì đấy</a></li>
-                    <li><a href="">Về chúng tôi</a></li>
-                </ul>
-            </nav>
-            <img src="/img/menu_icon.png" class="menuicon">
-        </div>
-        <div class="hang">
-            <div class="cot">
-                <h1>Bàn phím tối cổ</h1>
-                <p>Trang web được tạo bởi hai thằng nghèo không có tiền mua bàn phím vì thế trang web đã được tao ra cho đỡ ghiền</p>
-                <button type="button">Đăng Ký</button>
-            </div>
-            <div  class="cot">
-                <div class="thedemo thedemo1">
-                    <h5>Bàn Phím</h5>
-                    <p>hello chổ này viết giới thiệu bàn phím nè</p>
-                </div>
-                <div class="thedemo thedemo2">
-                    <h5>Bàn Phím cơ</h5>
-                    <p>hello chổ này viết giới thiệu bàn phím cơ nè</p>
-                </div>
-                <div class="thedemo thedemo3">
-                    <h5>bàn phím custom</h5>
-                    <p>hello chổ này viết giới thiệu bàn phím sustom nè</p>
-                </div>
-                <div class="thedemo thedemo4">
-                    <h5>kit Bàn Phím</h5>
-                    <p>hello chổ này viết giới thiệu kit bàn phím nè</p>
-                </div>
-            </div>
-        </div   >
 
-    </div>
+<body>
+    <header>
+        <div class="navbar">
+            <div class="logo"><a href="#"><img src="/img/cropped-Ban-sao-cua-DONG-TOI-CO-1.png"></a></div>
+            <ul class="luachon">
+                <li><a href="#">TRANG CHỦ</a></li>
+                <li><a href="#">VỀ CHÚNG TÔI</a></li>
+                <li><a href="#">SHOP</a></li>
+                <li><a href="#">LIÊN HỆ</a></li>
+            </ul>
+            <a href="#" class="nut">Đăng kí/Đăng nhập</a>
+            <div class="chuyendoi">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+            <div class="menu">
+                <li><a href="#">TRANG CHỦ</a></li>
+                <li><a href="#">VỀ CHÚNG TÔI</a></li>
+                <li><a href="#">SHOP</a></li>
+                <li><a href="#">LIÊN HỆ</a></li>
+                <li><a href="#" class="nut2">Đăng kí/Đăng nhập</a></li>
+            </div>
+        </div>
+        <section>
+            <div class="loichao">
+                <h1>Chào mừng đến bàn phím tối cổ</h1>
+                <p></p>
+            </div>
+        </section>
+    </header>
+    <script>
+        const nut = document.querySelector('.chuyendoi')
+        const iconnut = document.querySelector('.chuyendoi i')
+        const menu = document.querySelector('.menu')
+
+        nut.onclick = function () {
+            menu.classList.toggle('open')
+            const daopen = menu.classList.contains('open')
+
+            iconnut.classList = daopen
+                ? 'fa-solid fa-xmark'
+                : 'fa-solid fa-bars'
+        }
+    </script>
+
+    <section class="gioithieu">
+
+    </section>
 </body>
+
 </html>
