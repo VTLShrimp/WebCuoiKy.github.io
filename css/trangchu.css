@@ -6,8 +6,8 @@
 }
 
 body {
-background-color: #0b083a;
-color: #ffffff;
+  background-color: #0b083a;
+  color: #ffffff;
 }
 
 header {
@@ -24,12 +24,24 @@ header {
   animation-iteration-count: infinite;
 }
 @keyframes example {
-    0%   {background-image: url(/img/background.jpg)}
-    25% {background-image: url(/img/background_1.png)}
-    50% {background-image: url(/img/background_2.png)}
-    75% {background-image: url(/img/background_4.jpeg)}
-    85% {background-image: url(/img/background_custom.jpg);}
-    100%  {background-image: url(/img/background.jpg)}
+  0% {
+    background-image: url(/img/background.jpg);
+  }
+  25% {
+    background-image: url(/img/background_1.png);
+  }
+  50% {
+    background-image: url(/img/background_2.png);
+  }
+  75% {
+    background-image: url(/img/background_4.jpeg);
+  }
+  85% {
+    background-image: url(/img/background_custom.jpg);
+  }
+  100% {
+    background-image: url(/img/background.jpg);
+  }
 }
 nav {
   height: 12vh;
@@ -94,25 +106,25 @@ header {
   justify-content: space-around;
   z-index: 9;
 }
-nav .navbar .luachon li{
+nav .navbar .luachon li {
   display: inline-block;
   margin: 0 15px;
 }
 
-nav .navbar .luachon li a::after{
-  content: '';
+nav .navbar .luachon li a::after {
+  content: "";
   width: 0;
   height: 2px;
-  background:orange;
+  background: orange;
   display: block;
   transition: 0.2s linear;
 }
 
-nav .navbar .luachon li a:hover::after{
+nav .navbar .luachon li a:hover::after {
   width: 100%;
 }
 
-nav .navbar .luachon li a:hover{
+nav .navbar .luachon li a:hover {
   color: orange;
 }
 
@@ -215,7 +227,8 @@ nav .navbar .luachon li a:hover{
   }
 }
 
-.gioithieu {
+.gioithieu,
+.custom {
   width: 90%;
   height: 80vh;
   display: flex;
@@ -223,23 +236,89 @@ nav .navbar .luachon li a:hover{
   justify-content: space-around;
 }
 
-.gioithieu div {
+.gioithieu div,
+.custom div {
   width: 40%;
 }
 
-.gioithieu div h1 {
-  font-size: 100px;
+.gioithieu div h1,
+.uudiem div h1,
+.custom div h1 {
+  font-size: 80px;
   margin-top: 40px;
 }
 
-.gioithieu div p {
+.gioithieu div p,
+.uudiem div p,
+.custom div p {
   font-size: 20px;
   margin-top: 20px;
 }
 
-.gioithieu img {
+.gioithieu img,
+.custom img {
   width: 100%;
   height: 75%;
-
   margin-top: 40px;
+}
+
+.uudiem {
+  width: 90%;
+  height: 80vh;
+  display: flex;
+  margin: 0 auto;
+  justify-content: space-around;
+}
+
+.uudiem div {
+  width: 40%;
+}
+
+.uudiem img {
+  width: 100%;
+  height: 75%;
+}
+footer {
+  background-color: #07033f;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  height: 40vh;
+  align-items: center;
+}
+footer div img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-top: 5px;
+  margin-left: 150px;
+  display: block;
+}
+
+footer div {
+  margin-top: 30px;
+}
+
+footer div p {
+  margin-top: 30px;
+}
+
+.phan1footer {
+  width: 30%;
+}
+
+.phan1footer p {
+  text-transform: uppercase;
+}
+
+.iconfooter i {
+  margin-bottom: 150px;
+  margin-top: 20px;
+}
+
+.banquyen {
+  background-color: #07033f;
+  width: 100%;
+  height: 5vh;
+  text-align: right;
 }
