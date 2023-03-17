@@ -4,29 +4,54 @@
   box-sizing: border-box;
   font-family: Arial, Helvetica, sans-serif;
 }
+
+/*body {
+  background-image: url(/img/backgrondweb.jpg);
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  margin: 0 auto;
+}*/
+
 header {
-  height: 100vh;
+  height: 30vh;
   background-color: #000;
   background-image: url("/img/background_custom.jpg");
   background-size: cover;
   background-position: center;
+  width: 100%;
+  margin: 0 auto;
 }
-
+nav {
+  height: 13vh;
+  margin: 0 auto;
+  background-color: brown;
+  align-items: center;
+  text-align: center;
+  display: flex;
+  top: 0;
+  position: sticky;
+}
 .loichao {
-  height: calc(100vh-60px);
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   text-align: center;
-  margin-top: 100px;
-  color: white;
+  color: rgb(234, 61, 61);
 }
 
+.loichao h1 {
+  font-size: 60px;
+  margin-top: 30px;
+  text-transform: uppercase;
+}
+.loichao p {
+  font-size: 40px;
+}
 .logo img {
   width: 120px;
   height: 120px;
-  margin-top: 40px;
 }
 
 .luachon li {
@@ -50,16 +75,15 @@ header {
 .navbar {
   width: 100%;
   height: 60px;
-  max-width: 1200px;
   margin: 0 auto;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 
 .navbar .luachon {
   display: flex;
-  gap: 2rem;
+  gap: 8rem;
 }
 
 .navbar .chuyendoi {
@@ -154,4 +178,33 @@ header {
   .menu {
     display: block;
   }
+}
+
+.gioithieu {
+  width: 90%;
+  height: 80vh;
+  display: flex;
+  margin: 0 auto;
+  justify-content: space-around;
+}
+
+.gioithieu div {
+  width: 40%;
+}
+
+.gioithieu div h1 {
+  font-size: 100px;
+  margin-top: 40px;
+}
+
+.gioithieu div p {
+  font-size: 20px;
+  margin-top: 20px;
+}
+
+.gioithieu img {
+  width: 100%;
+  height: 75%;
+
+  margin-top: 40px;
 }
