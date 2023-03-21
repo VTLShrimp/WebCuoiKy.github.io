@@ -326,9 +326,7 @@ footer div p {
   width: 30%;
 }
 footer h2{
-  animation-name: doichovui;
-  animation-duration: 10s;
-  animation-iteration-count: infinite;
+  color: #0044ff;
 }
 .phan1footer p {
   font-weight: bold;
