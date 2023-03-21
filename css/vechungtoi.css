@@ -95,6 +95,7 @@ nav .navbar .luachon li a:hover {
 .nut:hover {
   scale: 1.05;
   color: white;
+  
 }
 
 .nut:active {
@@ -127,7 +128,9 @@ nav .navbar .luachon li a:hover {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  border-radius: 300px;
+  border-radius: 100%;
+  height: 40%;
+  width: 40%;
 }
 
 .thongtin p {
@@ -135,54 +138,93 @@ nav .navbar .luachon li a:hover {
   margin-top: 15px;
   font-size: 20px;
 }
-
 footer {
-  background-color: #07033f;
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  height: 30vh;
-  align-items: center;
-}
-footer div img {
-  width: 100px;
-  height: 100px;
-  border-radius: 50%;
-  margin-top: 5px;
-  margin-left: 150px;
-  display: block;
-}
-
-footer div {
-  margin-top: 30px;
-}
-
-footer div p {
-  margin-top: 10px;
-}
-
-.phan1footer {
-  width: 30%;
-}
-
-.phan1footer p {
-  text-transform: uppercase;
-}
-
-.iconfooter i {
-  margin-bottom: 85px;
-  margin-top: 20px;
-}
-
-.banquyen {
-  background-color: #07033f;
-  width: 100%;
-  height: 5vh;
-  text-align: right;
-}
-.banquyen {
-  background-color: #07033f;
-  width: 100%;
-  height: 5vh;
-  text-align: right;
+    background-color: #07033f;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    height: 30vh;
+    align-items: center;
+  }
+  footer div img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-top: 5px;
+    margin-left: 180px;
+    display: block;
+  }
+  
+  footer div {
+    margin-top: 20px;
+  }
+  
+  footer div p {
+    margin-top: 20px;
+  }
+  
+  .phan1footer {
+    width: 30%;
+  }
+  footer h2{
+    color: #0044ff;
+  }
+  .phan1footer p {
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+    animation-name: doichovui;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+  }
+  @keyframes doichovui {
+    0% {
+      color: #ff0000;
+    }
+    10% {
+      color: #ff8c00;
+    }
+    20% {
+      color: #c3ff00;
+    }
+    30% {
+      color: #00fd0d;
+    }
+    40% {
+      color: #00ffa2;
+    }
+    50% {
+      color: #00fff2;
+    }
+    60% {
+      color: #004cff;
+    }
+    70% {
+      color: #2600ff;
+    }
+    80% {
+      color: #c300ff;
+    }
+    90% {
+      color: #ff02af;
+    }
+    100% {
+      color: #ff0000;
+    }
+  
+  }
+  
+  .iconfooter i {
+    margin-bottom: 100px;
+    margin-top: 20px;
+  }
+  
+  .banquyen {
+    background-color: #07033f;
+    width: 100%;
+    height: 5vh;
+    text-align: right;
+  }
+::-webkit-scrollbar {
+    display: none;
 }

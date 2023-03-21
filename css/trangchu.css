@@ -384,3 +384,6 @@ footer h2{
   height: 5vh;
   text-align: right;
 }
+::-webkit-scrollbar {
+  display: none;
+}
