@@ -107,6 +107,7 @@ nav .navbar .luachon li a:hover {
 }
 
 .dangnhap {
+  background-color: #07033f6b;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -175,10 +176,11 @@ form .phannhap {
 }
 .pass:hover {
   text-decoration: underline;
+  color: rgb(208, 39, 255);
 }
 input[type="submit"] {
   width: 100%;
-  height: 50px;
+  height: 45px;
   border: 1px solid;
   background: #2691d9;
   border-radius: 25px;
