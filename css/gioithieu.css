@@ -10,7 +10,7 @@ body {
   color: #ffffff;
 }
 
-header {
+/* header {
   height: 90vh;
   background-color: #000;
   background-image: url("/img/background_custom.jpg");
@@ -54,29 +54,30 @@ header {
   100% {
     background-image: url(/img/background.jpg);
   }
+} */
+header{
+  width: 100%;
 }
 nav {
   height: 10vh;
-  margin: 0 auto;
   background-color: #07033f;
   align-items: center;
   text-align: center;
   display: flex;
-  top: 0;
   position: sticky;
 }
 .loichao {
-  background-color: #00000069;
+  background-color: #07033f;
   display: flex;
-  flex-direction: column;
   text-align: center;
   padding-bottom: 20px;
   color: #b9abfc;
+
 }
 
 .loichao h1 {
-  font-size: 60px;
-  margin-top: 20px;
+  font-size: 40px;
+  margin-top: 60px;
   text-transform: uppercase;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
     Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
@@ -84,11 +85,16 @@ nav {
 .loichao p {
   font-size: 40px;
 }
+.lc{
+  width: 60%;
+}
+.logo{
+  width: 35%;
+}
 .logo img {
-  width: 60px;
-  height: 60px;
+  height: 150px;
   border-radius: 50%;
-  margin-top: 5px;
+  margin-top: 20px;
 }
 
 .luachon li {
@@ -121,7 +127,8 @@ header {
 }
 nav .navbar .luachon li {
   display: inline-block;
-  margin: 0 15px;
+  margin: 0 20px;
+  justify-content: space-around;
 }
 
 nav .navbar .luachon li a::after {
