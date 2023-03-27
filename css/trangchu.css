@@ -78,8 +78,8 @@ nav {
   font-size: 60px;
   margin-top: 20px;
   text-transform: uppercase;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 .loichao p {
   font-size: 40px;
@@ -154,7 +154,6 @@ nav .navbar .luachon li a:hover {
 }
 
 .nut {
-
   color: rgb(255, 255, 255);
   padding: 0.5rem 1rem;
   border: none;
@@ -175,14 +174,15 @@ nav .navbar .luachon li a:hover {
 .nut:active {
   scale: 0.95;
 }
-hr{
+hr {
   width: 80%;
   margin: 0 auto;
   border: 3px solid blueviolet;
   background-color: blueviolet;
 }
 .gioithieu,
-.custom {
+.custom,
+.phukien {
   width: 90%;
   height: 80vh;
   display: flex;
@@ -191,27 +191,34 @@ hr{
 }
 
 .gioithieu div,
-.custom div {
+.custom div,
+.phukien div {
   width: 40%;
 }
 
 .gioithieu div h1,
 .uudiem div h1,
-.custom div h1 {
-  font-size: 70px;
+.custom div h1,
+.phukien div h1 {
+  font-size: 60px;
   margin-top: 40px;
+  text-transform: uppercase;
 }
 
 .gioithieu div p,
 .uudiem div p,
-.custom div p {
+.custom div p,
+.phukien div p {
   font-size: 25px;
+  margin-top: 20px;
+  text-align: justify;
   margin-top: 20px;
 }
 
 .uudiem img,
 .gioithieu img,
-.custom img {
+.custom img,
+.phukien img {
   width: 100%;
   height: 80%;
   margin-top: 40px;
@@ -261,7 +268,7 @@ footer div p {
 .phan1footer {
   width: 30%;
 }
-footer h2{
+footer h2 {
   color: #0044ff;
 }
 .phan1footer p {
@@ -306,7 +313,6 @@ footer h2{
   100% {
     color: #ff0000;
   }
-
 }
 
 .iconfooter i {
