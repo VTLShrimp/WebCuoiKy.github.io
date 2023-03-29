@@ -35,16 +35,7 @@
             <ul class="luachon">
                 <li><a href="#">Bán chạy</a></li>
                 <li><a href="#">Hàng mới</a></li>
-                <li>
-                    <a href="#">Dropdown</a>
-                    <div class="dropdown">
-                        <ul >
-                            <li><a href="#">Link1</a></li>
-                            <li><a href="#">Link2</a></li>
-                            <li><a href="#">Link3</a></li>
-                        </ul>
-                    </div>
-                </li>
+                <li><a href="#">Các hãng bàn phím</a></li>
                 <li><a href="#">Keycap</a></li>
                 <li><a href="#">Phụ kiện</a></li>
             </ul>
@@ -54,13 +45,49 @@
         </div>
     </nav>
 
-<div class="cacsanpham">
+    <div class="banphim">
+        <p id="banchay"></p>
+        <!-- <hr> -->
+        <div class="cacsanpham">
+            <div class="sanpham">
+                <img src="img/phimco/akko/akko_3087_rf_matcha_red_bean conv.png" alt="akko_3087_rf_matcha_red_bean conv">
+                <h5>Bàn phím AKKO 3087 RF Matcha Red Bean Conv</h5>
+                <p>Giá chỉ</p><h4> 21.690.000 VNĐ</h4>
+                <a href="#" class="nutmua"><i class="fa-solid fa-cart-shopping"></i> Mua Ngay</a></li>
+            </div>
+            <div class="sanpham">
+                <img src="img/phimco/akko/akko_3087_rf_matcha_red_bean conv.png" alt="akko_3087_rf_matcha_red_bean conv">
+                <h5>Bàn phím AKKO 3087 RF Matcha Red Bean Conv</h5>
+                <p>Giá chỉ</p><h4> 21.690.000 VNĐ</h4>
+                <a href="#" class="nutmua"><i class="fa-solid fa-cart-shopping"></i> Mua Ngay</a></li>
+            </div>
+            <div class="sanpham">
+                <img src="img/phimco/akko/akko_3087_rf_matcha_red_bean conv.png" alt="akko_3087_rf_matcha_red_bean conv">
+                <h5>Bàn phím AKKO 3087 RF Matcha Red Bean Conv</h5>
+                <p>Giá chỉ</p><h4> 21.690.000 VNĐ</h4>
+                <a href="#" class="nutmua"><i class="fa-solid fa-cart-shopping"></i> Mua Ngay</a></li>
+            </div>
+            <div class="sanpham">
+                <img src="img/phimco/akko/akko_3087_rf_matcha_red_bean conv.png" alt="akko_3087_rf_matcha_red_bean conv">
+                <h5>Bàn phím AKKO 3087 RF Matcha Red Bean Conv</h5>
+                <p>Giá chỉ</p><h4> 21.690.000 VNĐ</h4>
+                <a href="#" class="nutmua"><i class="fa-solid fa-cart-shopping"></i> Mua Ngay</a></li>
+            </div>
+            <div class="sanpham">
+                <img src="img/phimco/akko/akko_3087_rf_matcha_red_bean conv.png" alt="akko_3087_rf_matcha_red_bean conv">
+                <h5>Bàn phím AKKO 3087 RF Matcha Red Bean Conv</h5>
+                <p>Giá chỉ</p><h4> 21.690.000 VNĐ</h4>
+                <a href="#" class="nutmua"><i class="fa-solid fa-cart-shopping"></i> Mua Ngay</a></li>
+            </div>
+            <div class="sanpham">
+                <img src="img/phimco/akko/akko_3087_rf_matcha_red_bean conv.png" alt="akko_3087_rf_matcha_red_bean conv">
+                <h5>Bàn phím AKKO 3087 RF Matcha Red Bean Conv</h5>
+                <p>Giá chỉ</p><h4> 21.690.000 VNĐ</h4>
+                <a href="#" class="nutmua"><i class="fa-solid fa-cart-shopping"></i> Mua Ngay</a></li>
+            </div>
+    </div>
     
-        <div class="sanpham">
-
-        </div>
-</div>
-
+    
     <footer>
         <div class="phan1footer">
             <img src="/img/cropped-Ban-sao-cua-DONG-TOI-CO-1.png" alt="">
@@ -90,6 +117,28 @@
     </footer>
     <section class="banquyen">
         <p style="margin-right: 50px;"><i class="fa-regular fa-copyright"></i> 2023 COPYRIGHT by Động tối cổ</p>
+        <!-- import icon font awesome -->
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" />
+<!-- Import thư viện JQuery -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+// kéo xuống khoảng cách 500px thì xuất hiện nút Top-up
+var offset = 400;
+// thời gian di trượt 0.75s ( 1000 = 1s )
+var duration = 700;
+$(function(){
+$(window).scroll(function () {
+if ($(this).scrollTop() > offset)
+$('#top-up').fadeIn(duration);else
+$('#top-up').fadeOut(duration);
+});
+$('#top-up').click(function () {
+$('body,html').animate({scrollTop: 0}, duration);
+});
+});
+</script>
+<div title="Về đầu trang" id="top-up">
+<i class="fas fa-arrow-circle-up"></i></div>
     </section>
 </body>
 

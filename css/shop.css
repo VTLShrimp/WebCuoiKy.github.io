@@ -1,7 +1,6 @@
 * {
     margin: 0;
     padding: 0;
-    /* box-sizing: border-box; */
     font-weight: bold;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
   }
@@ -12,25 +11,6 @@
   }
   header{
     width: 100%;
-  }
-  .loichao {
-    background-color: #07033f;
-    display: flex;
-    text-align: center;
-    padding-bottom: 20px;
-    color: #b9abfc;
-  
-  }
-  
-  .loichao h1 {
-    font-size: 40px;
-    margin-top: 60px;
-    text-transform: uppercase;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-      Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-  }
-  .loichao p {
-    font-size: 40px;
   }
 nav {
     background-color: #07033f;
@@ -46,19 +26,18 @@ nav {
     border-radius: 50%;
     margin-top: 5px;
   }
-  
+  .luachon li {
+    list-style: none;
+    font-weight: bold;
+  }
   .luachon a,
   .navbar a {
     text-decoration: none;
     color: white;
     font-size: 1rem;
   }
-  .luachon a:hover {
+  .luachon li:hover {
     color: orange;
-  }
-  .luachon li>i{
-    color: #ffffff;
-    font-size: 20px;
   }
   .navbar {
     width: 100%;
@@ -115,37 +94,114 @@ nav {
     transition: scale 0.2 ease;
     border: 2px solid orange;
   }
+  .nutmua:hover,
   .nut:hover {
     scale: 1.05;
     background-color: orange;
     color: white;
     border: 4px solid rgb(255, 255, 255);
+    transition: 0.2s linear;
   }
+  .nutmua:active,
   .nut:active {
     scale: 0.95;
   }
-
-  .navbar ul li div.dropdown ul li {
-    display: block;
-  }
-  
-  .navbar ul li div.dropdown {
-    width: 20%;
-    background: #07033f53;
-    position: absolute;
-    z-index: 999;
-    display: none;
-  }
-  
-  .navbar ul li:hover div.dropdown {
-    display: block;
-  }
-  
-  hr {
+  /* hr {
+    border-radius: 5px;
     width: 80%;
     margin: 0 auto;
     border: 3px solid blueviolet;
     background-color: blueviolet;
+  } */
+a{
+  text-decoration: none;
+}
+.banphim{
+  padding-top: 10px;
+  width: 100%;
+}
+
+.banphim>p{
+    border-radius: 10px;
+    background-size: cover;
+    background-position: center;
+    height: 200px;
+    margin: 0 auto;
+    width: 90%;
+    background-repeat: no-repeat;
+}
+p#banchay{
+    background-image: url(/img/B.gif);  
+}
+
+.cacsanpham {
+    width: 80%;
+    display: flex;
+    justify-content: space-around;
+    margin: 0 auto;
+}
+.cacsanpham .sanpham img{
+    height: 60%;
+    margin-left: 15px;
+}
+.cacsanpham .sanpham p{
+  color: #07033f;
+}
+.cacsanpham .sanpham h4,
+.cacsanpham .sanpham p{
+    text-align: center;
+    font-weight: bold;
+    font-size: 15px;
+}
+.cacsanpham .sanpham h4{
+  margin-bottom: 10px;
+  color: red;
+}
+.cacsanpham .sanpham {
+    background-color: white;
+    height: 310px;
+    width: 200px;
+    border: 2px solid black;
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: 4px gray;
+    margin-top: 20px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    margin-right: 10px;
+    transition: all 0.2s linear;
+    cursor: pointer;
+}
+.cacsanpham .sanpham h5{
+    text-align: center;
+    color: rgba(38, 0, 255, 0.658);
+}
+.sanpham:hover{
+    transition: all 0.5 ease;
+    transform: scale(1.1);
+}
+.nutmua{
+  size: 10px;
+  align-items: center;
+  margin: 20%;
+  border: 2px solid orange;
+  border-radius: 5px;
+  padding: 5px;
+
+}
+
+#top-up {
+  font-size: 3rem;
+  cursor: pointer;
+  position: fixed;
+  z-index: 9999;
+  color:#e600ff;
+  bottom: 25px;
+  right: 20px;
+  display: none;
+  }
+  #top-up:hover {
+  color: #00b7ff;
   }
 
   footer {
