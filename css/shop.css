@@ -126,21 +126,23 @@ a{
     border-radius: 10px;
     background-size: cover;
     background-position: center;
-    height: 200px;
+    height: 230px;
     margin: 0 auto;
-    width: 90%;
+    width: 93%;
     background-repeat: no-repeat;
 }
 p#banchay{
-    background-image: url(/img/B.gif);  
+    background-image: url(/img/backgroundcacmuc/banchay.gif);  
 }
 p#cachangbanphim{
-  background-image: url(/img/Các\ hãng\ bàn\ phím\ \(2\).gif);
+  background-image: url(/img/backgroundcacmuc/cachangbanphim.gif);
 }
 p#hangmoi{
-  background-image: url(/img/glow.gif);
+  background-image: url(/img/backgroundcacmuc/hangmoi.gif);
 }
-
+p#keycap{
+  background-image: url(/img/backgroundcacmuc/keycap.gif);
+}
 .cacsanpham {
     width: 80%;
     display: flex;
