@@ -143,6 +143,8 @@ p#cachangbanphim{
     display: flex;
     justify-content: space-around;
     margin: 0 auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 .cacsanpham .sanpham img{
     height: 60%;
