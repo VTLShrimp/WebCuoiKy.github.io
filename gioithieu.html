@@ -38,7 +38,7 @@
             </div>
         </div>
     </nav>
-    <section class="gioithieu">
+    <section class="gioithieu reveal">
         <div>
             <h1>Bàn phím cơ là gì ?</h1>
             <p>Bàn phím cơ (tiếng Anh gọi là Mechanical Keyboard) là cách gọi thông dụng của người dùng cho chiếc bàn
@@ -54,7 +54,7 @@
         </div>
     </section>
     <hr>
-    <section class="uudiem">
+    <section class="uudiem reveal">
         <div>
             <img src="/img/anhphimco.jpg">
         </div>
@@ -66,7 +66,7 @@
         </div>
     </section>
     <hr>
-    <section class="custom">
+    <section class="custom reveal">
         <div>
             <h1>Bàn phím cơ custom là gì?</h1>
             <p>Bàn phím cơ custom là bàn phím mà người dùng có thể tùy biến các linh kiện một cách linh hoạt như switch,
@@ -79,7 +79,7 @@
         </div>
     </section>
     <hr>
-    <section class="phukien">
+    <section class="phukien reveal">
         <div>
             <img src="/img/switch-puller.jpg">
         </div>
@@ -91,7 +91,7 @@
         </div>
     </section>
     <footer>
-        <div class="phan1footer">
+        <div class="phan1footer reveal">
             <img src="/img/cropped-Ban-sao-cua-DONG-TOI-CO-1.png" alt="">
             <p>Trang Web được thực hiện bởi 2 thành viên thuộc động tối cổ của lớp D22CNTT02</p>
 
@@ -120,6 +120,45 @@
     <section class="banquyen">
         <p style="margin-right: 50px;"><i class="fa-regular fa-copyright"></i> 2023 COPYRIGHT by Động tối cổ</p>
     </section>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" />
+<!-- Import thư viện JQuery -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+// kéo xuống khoảng cách 500px thì xuất hiện nút Top-up
+var offset = 400;
+// thời gian di trượt 0.75s ( 1000 = 1s )
+var duration = 700;
+$(function(){
+$(window).scroll(function () {
+if ($(this).scrollTop() > offset)
+$('#top-up').fadeIn(duration);else
+$('#top-up').fadeOut(duration);
+});
+$('#top-up').click(function () {
+$('body,html').animate({scrollTop: 0}, duration);
+});
+});
+</script>
+<div title="Về đầu trang" id="top-up">
+<i class="fas fa-arrow-circle-up"></i></div>
+    <script>
+        window.addEventListener('scroll', reveal);
+        function reveal() {
+            var reveals = document.querySelectorAll('.reveal');
+
+            for (var i = 0; i < reveals.length; i++) {
+                var windowheight = window.innerHeight;
+                var revealtop = reveals[i].getBoundingClientRect().top;
+                var revealpoint = 150;
+                if (revealtop < windowheight - revealpoint) {
+                    reveals[i].classList.add('active')
+                }
+                else {
+                    reveals[i].classList.remove('active')
+                }
+            }
+        }
+    </script>
 </body>
 
 </html>

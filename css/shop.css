@@ -137,6 +137,9 @@ p#banchay{
 p#cachangbanphim{
   background-image: url(/img/Các\ hãng\ bàn\ phím\ \(2\).gif);
 }
+p#hangmoi{
+  background-image: url(/img/glow.gif);
+}
 
 .cacsanpham {
     width: 80%;
