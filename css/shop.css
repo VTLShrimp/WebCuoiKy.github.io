@@ -111,13 +111,7 @@ nav {
   .nut:active {
     scale: 0.95;
   }
-  /* hr {
-    border-radius: 5px;
-    width: 80%;
-    margin: 0 auto;
-    border: 3px solid blueviolet;
-    background-color: blueviolet;
-  } */
+
 a{
   text-decoration: none;
 }
@@ -147,17 +141,31 @@ p#hangmoi{
 p#keycap{
   background-image: url(/img/backgroundcacmuc/keycap.gif);
 }
+.hang{
+  padding-bottom: 30px;
+  row-gap: 20x;
+  column-gap: 20px;
+  width: 80%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: auto auto auto auto auto auto auto;
+  justify-content: space-around;
+}
 .cacsanpham {
+    row-gap: 20x;
+    column-gap: 20px;
     width: 80%;
-    display: flex;
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto ;
     justify-content: space-around;
     margin: 0 auto;
     margin-top: 20px;
     margin-bottom: 20px;
 }
 .cacsanpham .sanpham img{
-    height: 60%;
-    margin-left: 15px;
+  align-items: center;
+  justify-content: center;
+  height: 60%;
 }
 .cacsanpham .sanpham p{
   color: #07033f;
@@ -174,16 +182,12 @@ p#keycap{
 }
 .cacsanpham .sanpham {
     background-color: white;
-    height: 310px;
-    width: 200px;
+    height: 350px;
+    width: 210px;
     border: 2px solid black;
-    border-radius: 5px;
-    padding: 10px;
-    box-shadow: 4px gray;
+    border-radius: 10px;
     margin-top: 20px;
-    margin-left: 10px;
     margin-bottom: 10px;
-    margin-right: 10px;
     transition: all 0.2s linear;
     cursor: pointer;
 }
@@ -225,6 +229,28 @@ p#keycap{
   color: orange;
   border: 5px solid orange;
   background-color: white;
+}
+hr {
+  border-radius: 5px;
+  width: 90%;
+  margin: 0 auto;
+  border: 3px solid #f566c6;
+  background-color: #f566c6;
+}
+.tenhang{
+  margin: 0 auto;
+  width: 20%;
+  height: 10vh;
+  background-image: linear-gradient(180deg, #5470fd, #fc65c3);
+  text-align: center;
+  border-top-right-radius: 1000%;
+  border-top-left-radius: 1000%;
+}
+.tenhang img{
+  padding: 10px 20px 10px 20px; 
+  height: 70%;
+  align-items: center;
+  justify-content: center;
 }
 #top-up {
   font-size: 3rem;
