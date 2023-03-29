@@ -19,7 +19,9 @@
         <section>
             <div class="loichao">
                 <div class="logo"><a href="#"><img src="/img/cropped-Ban-sao-cua-DONG-TOI-CO-1.png"></a></div>
-                <div class="lc"><h1>Chào mừng đến bàn phím tối cổ</h1></div>
+                <div class="lc">
+                    <h1>Chào mừng đến bàn phím tối cổ</h1>
+                </div>
                 <p></p>
             </div>
         </section>
@@ -30,7 +32,8 @@
                 <li><i class="fa-solid fa-house"></i><a href="trangchu.html"> TRANG CHỦ</a></li>
                 <li><i class="fa-solid fa-cart-shopping"></i><a href="shop.html"> SHOP</a></li>
                 <li><i class="fa-solid fa-users"></i><a href="vechungtoi.html"> VỀ CHÚNG TÔI</a></li>
-                <li><i class="fa-solid fa-comment-dots fa-flip-horizontal"></i><a href="gioithieu.html"> GiỚI THIỆU</a></li>
+                <li><i class="fa-solid fa-comment-dots fa-flip-horizontal"></i><a href="gioithieu.html"> GiỚI THIỆU</a>
+                </li>
             </ul>
             <div>
                 <a href="dangnhap.html" class="nut" title="Đăng nhập"><i class="fa-solid fa-user"></i> </a>
@@ -121,26 +124,24 @@
         <p style="margin-right: 50px;"><i class="fa-regular fa-copyright"></i> 2023 COPYRIGHT by Động tối cổ</p>
     </section>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" />
-<!-- Import thư viện JQuery -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-<script>
-// kéo xuống khoảng cách 500px thì xuất hiện nút Top-up
-var offset = 400;
-// thời gian di trượt 0.75s ( 1000 = 1s )
-var duration = 700;
-$(function(){
-$(window).scroll(function () {
-if ($(this).scrollTop() > offset)
-$('#top-up').fadeIn(duration);else
-$('#top-up').fadeOut(duration);
-});
-$('#top-up').click(function () {
-$('body,html').animate({scrollTop: 0}, duration);
-});
-});
-</script>
-<div title="Về đầu trang" id="top-up">
-<i class="fas fa-arrow-circle-up"></i></div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        var offset = 400;
+        var duration = 700;
+        $(function () {
+            $(window).scroll(function () {
+                if ($(this).scrollTop() > offset)
+                    $('#top-up').fadeIn(duration); else
+                    $('#top-up').fadeOut(duration);
+            });
+            $('#top-up').click(function () {
+                $('body,html').animate({ scrollTop: 0 }, duration);
+            });
+        });
+    </script>
+    <div title="Về đầu trang" id="top-up">
+        <i class="fas fa-arrow-circle-up"></i>
+    </div>
     <script>
         window.addEventListener('scroll', reveal);
         function reveal() {

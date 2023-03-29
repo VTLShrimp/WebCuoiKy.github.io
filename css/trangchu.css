@@ -45,6 +45,7 @@ nav {
   top: 0;
   position: sticky;
   color: #ffffff;
+  z-index: 1;
 }
 .logo img {
   width: 60px;
@@ -177,3 +178,116 @@ nav .navbar .luachon li a:hover {
   font-weight: bold;
   padding: 90px 0;
 }
+footer {
+  background-color: #07033f;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  height: 40vh;
+  align-items: center;
+  margin-top: 40px;
+}
+footer div img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-top: 5px;
+  margin-left: 150px;
+  display: block;
+}
+
+footer div {
+  margin-top: 30px;
+}
+
+footer div p {
+  margin-top: 30px;
+}
+
+.phan1footer {
+  width: 30%;
+}
+footer h2 {
+  color: #0044ff;
+}
+.phan1footer p {
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
+  animation-name: doichovui;
+  animation-duration: 20s;
+  animation-iteration-count: infinite;
+}
+@keyframes doichovui {
+  0% {
+    color: #ff0000;
+  }
+  10% {
+    color: #ff8c00;
+  }
+  20% {
+    color: #c3ff00;
+  }
+  30% {
+    color: #00fd0d;
+  }
+  40% {
+    color: #00ffa2;
+  }
+  50% {
+    color: #00fff2;
+  }
+  60% {
+    color: #004cff;
+  }
+  70% {
+    color: #2600ff;
+  }
+  80% {
+    color: #c300ff;
+  }
+  90% {
+    color: #ff02af;
+  }
+  100% {
+    color: #ff0000;
+  }
+}
+
+.iconfooter i {
+  margin-bottom: 150px;
+  margin-top: 20px;
+}
+
+.banquyen {
+  background-color: #07033f;
+  width: 100%;
+  height: 5vh;
+  text-align: right;
+}
+::-webkit-scrollbar {
+  display: none;
+}
+.reveal {
+  transform: translateZ(150px);
+  position: relative;
+  opacity: 0;
+  transition: all 1s ease;
+}
+.reveal.active {
+  transform: translateZ(0px);
+  opacity: 1;
+}
+#top-up {
+  font-size: 3rem;
+  cursor: pointer;
+  position: fixed;
+  z-index: 9999;
+  color:#e600ff;
+  bottom: 25px;
+  right: 20px;
+  display: none;
+  }
+  #top-up:hover {
+  color: #00b7ff;
+  }
