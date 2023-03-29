@@ -202,13 +202,10 @@ p#keycap{
   border: 2px solid orange;
   border-radius: 5px;
   padding: 5px;
+}
 
-}
-.akko{
-  height: 100px;
-}
-.dareu{
-  height: 50px;
+.nuhang  p img{
+  height: 45px;
 }
 .nuhang{
   color: white;
