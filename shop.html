@@ -33,10 +33,10 @@
     <nav>
         <div class="navbar">
             <ul class="luachon">
-                <li><a href="#">Bán chạy</a></li>
-                <li><a href="#">Hàng mới</a></li>
-                <li><a href="#">Các hãng bàn phím</a></li>
-                <li><a href="#">Keycap</a></li>
+                <li><a href="#banchay">Bán chạy</a></li>
+                <li><a href="#hangmoi">Hàng mới</a></li>
+                <li><a href="#cachangbanphim">Các hãng bàn phím</a></li>
+                <li><a href="#keycap">Keycap</a></li>
                 <li><a href="#">Phụ kiện</a></li>
             </ul>
             <div>
@@ -44,8 +44,8 @@
             </div>
         </div>
     </nav>
-
-    <div class="banphim">
+    <p></p>
+    <div class="banphim" id="upbanchay">
         <p id="banchay"></p>
         <!-- <hr> -->
         <div class="cacsanpham">
@@ -134,7 +134,7 @@
         <!-- <hr> -->
         <div class="hang">
             <div class="nuhang">
-                <p><img src="/img/logohang/akko.png" alt="logoakko"></p>
+                <a href="akko"><p><img src="/img/logohang/akko.png" alt="logoakko"></p></a>
             </div>
             <div class="nuhang">
                 <p><img src="/img/logohang/logitech.png" alt="logologitech"></p>
@@ -155,7 +155,7 @@
                 <p><img src="/img/logohang/hangkhac.png" alt="hangkhac"></p>
             </div>
         </div>
-        <div class="tenhang"><img src="/img/logohang/akko.png" alt="logoakko"></div>
+        <div id="akko" class="tenhang"><img src="/img/logohang/akko.png" alt="logoakko"></div>
         <hr>        
         <div class="cacsanpham">
             <div class="sanpham">
@@ -539,7 +539,7 @@ $('body,html').animate({scrollTop: 0}, duration);
 </script>
 <div title="Về đầu trang" id="top-up">
 <i class="fas fa-arrow-circle-up"></i></div>
-    </section>
+</section>
 </body>
 
 </html>
