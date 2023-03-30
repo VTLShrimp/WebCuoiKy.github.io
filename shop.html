@@ -35,9 +35,9 @@
         <div class="navbar">
             <ul class="luachon">
                 <li><a href="#banchay">Bán chạy</a></li>
-                <li><a href="#">Hàng mới</a></li>
-                <li><a href="#">Các hãng bàn phím</a></li>
-                <li><a href="#">Keycap</a></li>
+                <li><a href="#hangmoi">Hàng mới</a></li>
+                <li><a href="#cachangbanphim">Các hãng bàn phím</a></li>
+                <li><a href="#keycap">Keycap</a></li>
                 <li><a href="#">Phụ kiện</a></li>
             </ul>
             <div>
@@ -45,8 +45,8 @@
             </div>
         </div>
     </nav>
-
-    <div class="banphim">
+    <p></p>
+    <div class="banphim" id="upbanchay">
         <p id="banchay"></p>
         <!-- <hr> -->
         <div class="cacsanpham">
@@ -147,7 +147,7 @@
         <!-- <hr> -->
         <div class="hang">
             <div class="nuhang">
-                <p><img src="/img/logohang/akko.png" alt="logoakko"></p>
+                <a href="akko"><p><img src="/img/logohang/akko.png" alt="logoakko"></p></a>
             </div>
             <div class="nuhang">
                 <p><img src="/img/logohang/logitech.png" alt="logologitech"></p>
@@ -168,9 +168,8 @@
                 <p><img src="/img/logohang/hangkhac.png" alt="hangkhac"></p>
             </div>
         </div>
-        <!--HÀNG CỦA AKKO-->
         <div class="tenhang"><img src="/img/logohang/akko.png" alt="logoakko"></div>
-        <hr>
+        <hr>        
         <div class="cacsanpham">
             <div class="sanpham">
                 <img src="/img/phimco/akko/AKKO308B.webp" alt="">
@@ -587,27 +586,28 @@
     </footer>
     <section class="banquyen">
         <p style="margin-right: 50px;"><i class="fa-regular fa-copyright"></i> 2023 COPYRIGHT by Động tối cổ</p>
-        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" />
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-        <script>
-
-            var offset = 400;
-
-            var duration = 700;
-            $(function () {
-                $(window).scroll(function () {
-                    if ($(this).scrollTop() > offset)
-                        $('#top-up').fadeIn(duration); else
-                        $('#top-up').fadeOut(duration);
-                });
-                $('#top-up').click(function () {
-                    $('body,html').animate({ scrollTop: 0 }, duration);
-                });
-            });
-        </script>
-        <div title="Về đầu trang" id="top-up">
-            <i class="fas fa-arrow-circle-up"></i>
-        </div>
+        <!-- import icon font awesome -->
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" />
+<!-- Import thư viện JQuery -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+// kéo xuống khoảng cách 500px thì xuất hiện nút Top-up
+var offset = 400;
+// thời gian di trượt 0.75s ( 1000 = 1s )
+var duration = 700;
+$(function(){
+$(window).scroll(function () {
+if ($(this).scrollTop() > offset)
+$('#top-up').fadeIn(duration);else
+$('#top-up').fadeOut(duration);
+});
+$('#top-up').click(function () {
+$('body,html').animate({scrollTop: 0}, duration);
+});
+});
+</script>
+<div title="Về đầu trang" id="top-up">
+<i class="fas fa-arrow-circle-up"></i></div>
     </section>
 </body>
 

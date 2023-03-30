@@ -17,104 +17,107 @@ header {
   width: 100%;
 }
 nav {
-  background-color: #07033f;
-  height: 10vh;
-  margin: 0 auto;
-  align-items: center;
-  text-align: center;
-  display: flex;
-  position: -webkit-sticky;
-  position: sticky;
-  top: 0;
-  z-index: 1;
-}
-.logo img {
-  width: 60px;
-  height: 60px;
-  border-radius: 50%;
-  margin-top: 5px;
-}
-.luachon li {
-  list-style: none;
-  font-weight: bold;
-}
-.luachon a,
-.navbar a {
-  text-decoration: none;
-  color: white;
-  font-size: 1rem;
-}
-.luachon li:hover {
-  color: orange;
-}
-.navbar {
-  width: 100%;
-  height: 60px;
-  margin: 0 auto;
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  z-index: 9;
-}
-nav .navbar .luachon li {
-  display: inline-block;
-  margin: 0 15px;
-}
-
-nav .navbar .luachon li a::after {
-  content: "";
-  width: 0;
-  height: 2px;
-  background: orange;
-  display: block;
-  transition: 0.2s linear;
-}
-
-nav .navbar .luachon li a:hover::after {
-  width: 100%;
-}
-
-nav .navbar .luachon li a:hover {
-  color: orange;
-}
-
-.navbar .luachon {
-  display: flex;
-  gap: 8rem;
-}
-
-.navbar .chuyendoi {
-  color: white;
-  font-size: 1.5rem;
-  cursor: pointer;
-  display: none;
-}
-
-.nut {
-  color: rgb(255, 255, 255);
-  padding: 0.5rem 1rem;
-  border: none;
-  outline: none;
-  border-radius: 20px;
-  font-size: 0.8rem;
-  font-weight: bold;
-  cursor: pointer;
-  transition: scale 0.2 ease;
-  border: 2px solid orange;
-}
-.nutmua:hover,
-.nut:hover {
-  scale: 1.05;
-  background-color: orange;
-  color: white;
-  border: 4px solid rgb(255, 255, 255);
-  transition: 0.2s linear;
-}
-.nuhang:active,
-.nutmua:active,
-.nut:active {
-  scale: 0.95;
-}
+    background-color: #07033f;
+    height: 10vh;
+    margin: 0 auto;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+  }
+  html{
+    scroll-behavior: smooth;
+  }
+  .logo img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin-top: 5px;
+  }
+  .luachon li {
+    list-style: none;
+    font-weight: bold;
+  }
+  .luachon a,
+  .navbar a {
+    text-decoration: none;
+    color: white;
+    font-size: 1rem;
+  }
+  .luachon li:hover {
+    color: orange;
+  }
+  .navbar {
+    width: 100%;
+    height: 60px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    z-index: 9;
+  }
+  nav .navbar .luachon li {
+    display: inline-block;
+    margin: 0 15px;
+  }
+  
+  nav .navbar .luachon li a::after {
+    content: "";
+    width: 0;
+    height: 2px;
+    background: orange;
+    display: block;
+    transition: 0.2s linear;
+  }
+  
+  nav .navbar .luachon li a:hover::after {
+    width: 100%;
+  }
+  
+  nav .navbar .luachon li a:hover {
+    color: orange;
+  }
+  
+  .navbar .luachon {
+    display: flex;
+    gap: 8rem;
+  }
+  
+  .navbar .chuyendoi {
+    color: white;
+    font-size: 1.5rem;
+    cursor: pointer;
+    display: none;
+  }
+  
+  .nut {
+    color: rgb(255, 255, 255);
+    padding: 0.5rem 1rem;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: scale 0.2 ease;
+    border: 2px solid orange;
+  }
+  .nutmua:hover,
+  .nut:hover {
+    scale: 1.05;
+    background-color: orange;
+    color: white;
+    border: 4px solid rgb(255, 255, 255);
+    transition: 0.2s linear;
+  }
+  .nuhang:active,
+  .nutmua:active,
+  .nut:active {
+    scale: 0.95;
+  }
 
 a {
   text-decoration: none;
