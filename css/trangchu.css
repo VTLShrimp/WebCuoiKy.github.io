@@ -123,6 +123,14 @@ nav .navbar .luachon li a:hover {
 .nut:active {
   scale: 0.95;
 }
+hr {
+  height: 3px;
+  border-radius: 10px;
+  width: 90%;
+  margin: 0 auto;
+  border: 2px solid #030b3fdf;
+  background-color: #030b3fdf;
+}
 .gioithieu {
   text-transform: uppercase;
   margin-top: 30px;
@@ -179,6 +187,7 @@ nav .navbar .luachon li a:hover {
   padding: 90px 0;
 }
 footer {
+  color: white;
   background-color: #07033f;
   width: 100%;
   display: flex;
@@ -255,11 +264,13 @@ footer h2 {
 }
 
 .iconfooter i {
+  color: white;
   margin-bottom: 150px;
   margin-top: 20px;
 }
 
 .banquyen {
+  color: white;
   background-color: #07033f;
   width: 100%;
   height: 5vh;
