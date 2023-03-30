@@ -1,147 +1,151 @@
 * {
-    margin: 0;
-    padding: 0;
-    font-weight: bold;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
-  }
-  
-  body {
-    background-color: #030b3fdf;
-    color: #ffffff;
-  }
-  header{
-    width: 100%;
-  }
-nav {
-    background-color: #07033f;
-    height: 10vh;
-    margin: 0 auto;
-    align-items: center;
-    text-align: center;
-    display: flex;
-    position: -webkit-sticky;
-    position: sticky;
-    top: 0;
-    z-index: 1;
-  }
-  .logo img {
-    width: 60px;
-    height: 60px;
-    border-radius: 50%;
-    margin-top: 5px;
-  }
-  .luachon li {
-    list-style: none;
-    font-weight: bold;
-  }
-  .luachon a,
-  .navbar a {
-    text-decoration: none;
-    color: white;
-    font-size: 1rem;
-  }
-  .luachon li:hover {
-    color: orange;
-  }
-  .navbar {
-    width: 100%;
-    height: 60px;
-    margin: 0 auto;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    z-index: 9;
-  }
-  nav .navbar .luachon li {
-    display: inline-block;
-    margin: 0 15px;
-  }
-  
-  nav .navbar .luachon li a::after {
-    content: "";
-    width: 0;
-    height: 2px;
-    background: orange;
-    display: block;
-    transition: 0.2s linear;
-  }
-  
-  nav .navbar .luachon li a:hover::after {
-    width: 100%;
-  }
-  
-  nav .navbar .luachon li a:hover {
-    color: orange;
-  }
-  
-  .navbar .luachon {
-    display: flex;
-    gap: 8rem;
-  }
-  
-  .navbar .chuyendoi {
-    color: white;
-    font-size: 1.5rem;
-    cursor: pointer;
-    display: none;
-  }
-  
-  .nut {
-    color: rgb(255, 255, 255);
-    padding: 0.5rem 1rem;
-    border: none;
-    outline: none;
-    border-radius: 20px;
-    font-size: 0.8rem;
-    font-weight: bold;
-    cursor: pointer;
-    transition: scale 0.2 ease;
-    border: 2px solid orange;
-  }
-  .nutmua:hover,
-  .nut:hover {
-    scale: 1.05;
-    background-color: orange;
-    color: white;
-    border: 4px solid rgb(255, 255, 255);
-    transition: 0.2s linear;
-  }
-  .nuhang:active,
-  .nutmua:active,
-  .nut:active {
-    scale: 0.95;
-  }
+  margin: 0;
+  padding: 0;
+  font-weight: bold;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+html {
+  scroll-behavior: smooth;
+}
 
-a{
+body {
+  background-color: #030b3fdf;
+  color: #ffffff;
+}
+header {
+  width: 100%;
+}
+nav {
+  background-color: #07033f;
+  height: 10vh;
+  margin: 0 auto;
+  align-items: center;
+  text-align: center;
+  display: flex;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+.logo img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  margin-top: 5px;
+}
+.luachon li {
+  list-style: none;
+  font-weight: bold;
+}
+.luachon a,
+.navbar a {
+  text-decoration: none;
+  color: white;
+  font-size: 1rem;
+}
+.luachon li:hover {
+  color: orange;
+}
+.navbar {
+  width: 100%;
+  height: 60px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  z-index: 9;
+}
+nav .navbar .luachon li {
+  display: inline-block;
+  margin: 0 15px;
+}
+
+nav .navbar .luachon li a::after {
+  content: "";
+  width: 0;
+  height: 2px;
+  background: orange;
+  display: block;
+  transition: 0.2s linear;
+}
+
+nav .navbar .luachon li a:hover::after {
+  width: 100%;
+}
+
+nav .navbar .luachon li a:hover {
+  color: orange;
+}
+
+.navbar .luachon {
+  display: flex;
+  gap: 8rem;
+}
+
+.navbar .chuyendoi {
+  color: white;
+  font-size: 1.5rem;
+  cursor: pointer;
+  display: none;
+}
+
+.nut {
+  color: rgb(255, 255, 255);
+  padding: 0.5rem 1rem;
+  border: none;
+  outline: none;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: scale 0.2 ease;
+  border: 2px solid orange;
+}
+.nutmua:hover,
+.nut:hover {
+  scale: 1.05;
+  background-color: orange;
+  color: white;
+  border: 4px solid rgb(255, 255, 255);
+  transition: 0.2s linear;
+}
+.nuhang:active,
+.nutmua:active,
+.nut:active {
+  scale: 0.95;
+}
+
+a {
   text-decoration: none;
 }
-.banphim{
+.banphim {
   padding-top: 10px;
   width: 100%;
 }
 
-.banphim>p{
-    border-radius: 10px;
-    background-size: cover;
-    background-position: center;
-    height: 230px;
-    margin: 0 auto;
-    width: 93%;
-    background-repeat: no-repeat;
+.banphim > p {
+  border-radius: 10px;
+  background-size: cover;
+  background-position: center;
+  height: 230px;
+  margin: 0 auto;
+  width: 93%;
+  background-repeat: no-repeat;
 }
-p#banchay{
-    background-image: url(/img/backgroundcacmuc/banchay.gif);  
+p#banchay {
+  background-image: url(/img/backgroundcacmuc/banchay.gif);
 }
-p#cachangbanphim{
+p#cachangbanphim {
   background-image: url(/img/backgroundcacmuc/cachangbanphim.gif);
 }
-p#hangmoi{
+p#hangmoi {
   background-image: url(/img/backgroundcacmuc/hangmoi.gif);
 }
-p#keycap{
+p#keycap {
   background-image: url(/img/backgroundcacmuc/keycap.gif);
 }
-.hang{
+.hang {
   padding-bottom: 30px;
   row-gap: 20x;
   column-gap: 20px;
@@ -152,54 +156,54 @@ p#keycap{
   justify-content: space-around;
 }
 .cacsanpham {
-    row-gap: 20x;
-    column-gap: 20px;
-    width: 80%;
-    display: grid;
-    grid-template-columns: auto auto auto auto auto auto ;
-    justify-content: space-around;
-    margin: 0 auto;
-    margin-top: 20px;
-    margin-bottom: 20px;
+  row-gap: 20x;
+  column-gap: 20px;
+  width: 80%;
+  display: grid;
+  grid-template-columns: auto auto auto auto auto auto;
+  justify-content: space-around;
+  margin: 0 auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
-.cacsanpham .sanpham img{
+.cacsanpham .sanpham img {
   align-items: center;
   justify-content: center;
   height: 60%;
 }
-.cacsanpham .sanpham p{
+.cacsanpham .sanpham p {
   color: #07033f;
 }
 .cacsanpham .sanpham h4,
-.cacsanpham .sanpham p{
-    text-align: center;
-    font-weight: bold;
-    font-size: 15px;
+.cacsanpham .sanpham p {
+  text-align: center;
+  font-weight: bold;
+  font-size: 15px;
 }
-.cacsanpham .sanpham h4{
+.cacsanpham .sanpham h4 {
   margin-bottom: 10px;
   color: red;
 }
 .cacsanpham .sanpham {
-    background-color: white;
-    height: 350px;
-    width: 210px;
-    border: 2px solid black;
-    border-radius: 10px;
-    margin-top: 20px;
-    margin-bottom: 10px;
-    transition: all 0.2s linear;
-    cursor: pointer;
+  background-color: white;
+  height: 350px;
+  width: 210px;
+  border: 2px solid black;
+  border-radius: 10px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  transition: all 0.2s linear;
+  cursor: pointer;
 }
-.cacsanpham .sanpham h5{
-    text-align: center;
-    color: rgba(38, 0, 255, 0.658);
+.cacsanpham .sanpham h5 {
+  text-align: center;
+  color: rgba(38, 0, 255, 0.658);
 }
-.sanpham:hover{
-    transition: all 0.5 ease;
-    transform: scale(1.1);
+.sanpham:hover {
+  transition: all 0.5 ease;
+  transform: scale(1.1);
 }
-.nutmua{
+.nutmua {
   size: 10px;
   align-items: center;
   margin: 20%;
@@ -208,10 +212,10 @@ p#keycap{
   padding: 5px;
 }
 
-.nuhang  p img{
+.nuhang p img {
   height: 45px;
 }
-.nuhang{
+.nuhang {
   color: white;
   border: 5px solid white;
   background-color: orange;
@@ -225,7 +229,7 @@ p#keycap{
   cursor: pointer;
   transition: 0.2s linear;
 }
-.nuhang:hover{
+.nuhang:hover {
   color: orange;
   border: 5px solid orange;
   background-color: white;
@@ -237,7 +241,7 @@ hr {
   border: 3px solid #f566c6;
   background-color: #f566c6;
 }
-.tenhang{
+.tenhang {
   margin: 0 auto;
   width: 20%;
   height: 10vh;
@@ -246,8 +250,8 @@ hr {
   border-top-right-radius: 1000%;
   border-top-left-radius: 1000%;
 }
-.tenhang img{
-  padding: 10px 20px 10px 20px; 
+.tenhang img {
+  padding: 10px 20px 10px 20px;
   height: 70%;
   align-items: center;
   justify-content: center;
@@ -257,102 +261,101 @@ hr {
   cursor: pointer;
   position: fixed;
   z-index: 9999;
-  color:#e600ff;
+  color: #e600ff;
   bottom: 25px;
   right: 20px;
   display: none;
-  }
-  #top-up:hover {
+}
+#top-up:hover {
   color: #00b7ff;
-  }
+}
 
-  footer {
-    background-color: #07033f;
-    width: 100%;
-    display: flex;
-    justify-content: space-around;
-    height: 40vh;
-    align-items: center;
+footer {
+  background-color: #07033f;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  height: 40vh;
+  align-items: center;
+}
+footer div img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-top: 5px;
+  margin-left: 150px;
+  display: block;
+}
+
+footer div {
+  margin-top: 30px;
+}
+
+footer div p {
+  margin-top: 30px;
+}
+
+.phan1footer {
+  width: 30%;
+}
+footer h2 {
+  color: #0044ff;
+}
+.phan1footer p {
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
+  animation-name: doichovui;
+  animation-duration: 20s;
+  animation-iteration-count: infinite;
+}
+@keyframes doichovui {
+  0% {
+    color: #ff0000;
   }
-  footer div img {
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-    margin-top: 5px;
-    margin-left: 150px;
-    display: block;
+  10% {
+    color: #ff8c00;
   }
-  
-  footer div {
-    margin-top: 30px;
+  20% {
+    color: #c3ff00;
   }
-  
-  footer div p {
-    margin-top: 30px;
+  30% {
+    color: #00fd0d;
   }
-  
-  .phan1footer {
-    width: 30%;
+  40% {
+    color: #00ffa2;
   }
-  footer h2 {
-    color: #0044ff;
+  50% {
+    color: #00fff2;
   }
-  .phan1footer p {
-    font-weight: bold;
-    text-transform: uppercase;
-    text-align: center;
-    animation-name: doichovui;
-    animation-duration: 20s;
-    animation-iteration-count: infinite;
+  60% {
+    color: #004cff;
   }
-  @keyframes doichovui {
-    0% {
-      color: #ff0000;
-    }
-    10% {
-      color: #ff8c00;
-    }
-    20% {
-      color: #c3ff00;
-    }
-    30% {
-      color: #00fd0d;
-    }
-    40% {
-      color: #00ffa2;
-    }
-    50% {
-      color: #00fff2;
-    }
-    60% {
-      color: #004cff;
-    }
-    70% {
-      color: #2600ff;
-    }
-    80% {
-      color: #c300ff;
-    }
-    90% {
-      color: #ff02af;
-    }
-    100% {
-      color: #ff0000;
-    }
+  70% {
+    color: #2600ff;
   }
-  
-  .iconfooter i {
-    margin-bottom: 150px;
-    margin-top: 20px;
+  80% {
+    color: #c300ff;
   }
-  
-  .banquyen {
-    background-color: #07033f;
-    width: 100%;
-    height: 5vh;
-    text-align: right;
+  90% {
+    color: #ff02af;
   }
-  ::-webkit-scrollbar {
-    display: none;
+  100% {
+    color: #ff0000;
   }
-  
+}
+
+.iconfooter i {
+  margin-bottom: 150px;
+  margin-top: 20px;
+}
+
+.banquyen {
+  background-color: #07033f;
+  width: 100%;
+  height: 5vh;
+  text-align: right;
+}
+::-webkit-scrollbar {
+  display: none;
+}
