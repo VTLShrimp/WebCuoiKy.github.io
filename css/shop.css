@@ -144,6 +144,9 @@ p#hangmoi{
 p#keycap{
   background-image: url(/img/backgroundcacmuc/keycap.gif);
 }
+p#phukien{
+  background-image: url(/img/backgroundcacmuc/phukien.gif);
+}
 .hang{
   padding-bottom: 30px;
   row-gap: 20x;
