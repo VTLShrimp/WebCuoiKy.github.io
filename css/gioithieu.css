@@ -327,7 +327,19 @@ footer h2 {
   text-align: right;
 }
 ::-webkit-scrollbar {
-  display: none;
+  background: #07033f;
+
+}
+::-webkit-scrollbar-track {
+  border-radius: 10px;
+}
+::-webkit-scrollbar-thumb {
+  background: orange; 
+  border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover{
+  border: 5px solid orange;
+  background: white;
 }
 .reveal {
   transform: translateZ(150px);

@@ -113,6 +113,7 @@ nav {
     border: 4px solid rgb(255, 255, 255);
     transition: 0.2s linear;
   }
+  ::-webkit-scrollbar-track:active,
   .nuhang:active,
   .nutmua:active,
   .nut:active {
@@ -363,7 +364,19 @@ footer h2 {
   text-align: right;
 }
 ::-webkit-scrollbar {
-  display: none;
+  background: #07033f;
+
+}
+::-webkit-scrollbar-track {
+  border-radius: 10px;
+}
+::-webkit-scrollbar-thumb {
+  background: orange; 
+  border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover{
+  border: 5px solid orange;
+  background: white;
 }
 .reveal {
   transform: translateY(150px);
