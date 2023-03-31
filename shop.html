@@ -185,7 +185,7 @@
         <div id="akko"></div>
         <div class="tenhang reveal"><img src="/img/logohang/akko.png" alt="logoakko"></div>
         <hr class="reveal">
-        <div class="cacsanpham reveal reveal">
+        <div class="cacsanpham reveal">
             <div class="sanpham">
                 <img src="/img/phimco/akko/AKKO308B.webp" alt="">
                 <h5>Bàn phím cơ AKKO 3084B Plus World Tour Tokyo R2</h5>
@@ -625,7 +625,7 @@
         <p id="phukien"></p>     
     <div style="margin-top: 20px;" class="tenhang reveal"><img src="/img/logohang/kit.png" alt=""></div>
         <hr class="reveal">
-        <div class="cacsanpham reveal reveal">
+        <div class="cacsanpham reveal">
             <div class="sanpham">
                 <img src="/img/phimco/akko/AKKO308B.webp" alt="">
                 <h5>Bàn phím cơ AKKO 3084B Plus World Tour Tokyo R2</h5>
@@ -674,7 +674,7 @@
     </div>
     <div class="tenhang reveal"><img src="/img/logohang/switch.png" alt="logoakko"></div>
         <hr class="reveal">
-        <div class="cacsanpham reveal reveal">
+        <div class="cacsanpham reveal">
             <div class="sanpham">
                 <img src="/img/phimco/akko/AKKO308B.webp" alt="">
                 <h5>Bàn phím cơ AKKO 3084B Plus World Tour Tokyo R2</h5>
@@ -723,7 +723,7 @@
     </div>
         <div class="tenhang reveal"><img src="/img/logohang/phukienkhac.png" alt="logoakko"></div>
         <hr class="reveal">
-        <div class="cacsanpham reveal reveal">
+        <div class="cacsanpham reveal">
             <div class="sanpham">
                 <img src="/img/phimco/akko/AKKO308B.webp" alt="">
                 <h5>Bàn phím cơ AKKO 3084B Plus World Tour Tokyo R2</h5>
@@ -804,44 +804,11 @@
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" />
         <!-- Import thư viện JQuery -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-        <script>
-            // kéo xuống khoảng cách 500px thì xuất hiện nút Top-up
-            var offset = 400;
-            // thời gian di trượt 0.75s ( 1000 = 1s )
-            var duration = 700;
-            $(function () {
-                $(window).scroll(function () {
-                    if ($(this).scrollTop() > offset)
-                        $('#top-up').fadeIn(duration); else
-                        $('#top-up').fadeOut(duration);
-                });
-                $('#top-up').click(function () {
-                    $('body,html').animate({ scrollTop: 0 }, duration);
-                });
-            });
-        </script>
         <div title="Về đầu trang" id="top-up">
             <i class="fas fa-arrow-circle-up"></i>
         </div>
     </section>
-    <script>
-        window.addEventListener('scroll', reveal);
-        function reveal() {
-            var reveals = document.querySelectorAll('.reveal');
-
-            for (var i = 0; i < reveals.length; i++) {
-                var windowheight = window.innerHeight;
-                var revealtop = reveals[i].getBoundingClientRect().top;
-                var revealpoint = 150;
-                if (revealtop < windowheight - revealpoint) {
-                    reveals[i].classList.add('active')
-                }
-                else {
-                    reveals[i].classList.remove('active')
-                }
-            }
-        }
-    </script>
+    <script src="/js/shop.js"></script>
 </body>
 
 </html>
