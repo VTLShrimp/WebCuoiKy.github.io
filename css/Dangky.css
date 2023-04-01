@@ -252,3 +252,6 @@ footer div p {
   height: 5vh;
   text-align: right;
 }
+::-webkit-scrollbar{
+  display: none;
+}
